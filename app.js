@@ -47,3 +47,4 @@ for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
     var hb = _a[_i];
     console.log(hb);
 }
+//# sourceMappingURL=app.js.map
