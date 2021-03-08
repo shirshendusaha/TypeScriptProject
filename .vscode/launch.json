@@ -12,6 +12,16 @@
       "webRoot": "${workspaceFolder}",
       "trace": true,
       "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "mocha test",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": ["-r","ts-node/register","--colors","${workspaceFolder}/techspec/test/*.ts"],
+      "internalConsoleOptions": "openOnSessionStart",
+      "trace": true,
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }

@@ -1,3 +1,5 @@
+import {assert, expect} from 'chai';
+
 console.log("Run type script code");
 function add(n1: number, n2: number, showResult: boolean):number {
   if (showResult) {
@@ -32,6 +34,7 @@ let number1: number;
 number1 = 5;
 const number2 = 2.5;
 const printResult = false;
+const trueResult = true;
 const result = add(number1, number2, printResult);
 let fixPerson: [string,string];
 fixPerson =["test1","test2"];
@@ -41,3 +44,12 @@ console.log(person.role);
 for (const hb of person.hobbies) {
   console.log(hb);
 }
+console.log('other passed');
+
+describe('Array', function() {
+  describe('#indexOf()', function() {
+    it('should return -1 when the value is not present', function(){
+      assert.equal(-1, [1,2,3].indexOf(4));
+    });
+  });
+});
